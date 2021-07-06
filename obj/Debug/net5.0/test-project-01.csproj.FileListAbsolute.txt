@@ -1,0 +1,5 @@
+/Users/gecso/Projects/obtaincare2/z_hr_project/test-project-01/obj/Debug/net5.0/test-project-01.csprojAssemblyReference.cache
+/Users/gecso/Projects/obtaincare2/z_hr_project/test-project-01/obj/Debug/net5.0/test-project-01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gecso/Projects/obtaincare2/z_hr_project/test-project-01/obj/Debug/net5.0/test-project-01.AssemblyInfoInputs.cache
+/Users/gecso/Projects/obtaincare2/z_hr_project/test-project-01/obj/Debug/net5.0/test-project-01.AssemblyInfo.cs
+/Users/gecso/Projects/obtaincare2/z_hr_project/test-project-01/obj/Debug/net5.0/test-project-01.csproj.CoreCompileInputs.cache

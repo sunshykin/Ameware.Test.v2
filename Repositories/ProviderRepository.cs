@@ -60,6 +60,10 @@ namespace test_project_01.Repositories
                    new Location {
                        code = "l-3-b",
                        Title = "title for #3-b"
+                   },
+                   new Location {
+                       code = "l-3-c",
+                       Title = "title for #3-c"
                    }
                }
             },

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using test_project_01.Models;
 using test_project_01.Repositories;
 
@@ -15,7 +16,7 @@ namespace test_project_01.Services
             this.providerRepository = providerRepository;
         }
 
-        public IEnumerable<ProviderLocation> GetItems(ProviderLocationHandle[] handlers) {
+        public async Task<IEnumerable<ProviderLocation>> GetItemsAsync(ProviderLocationHandle[] handlers) {
             throw new NotImplementedException();
         }
     }

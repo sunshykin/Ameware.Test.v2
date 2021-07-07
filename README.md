@@ -30,3 +30,6 @@ if provideId & locationId exists => return both;
 if providerId exists but locationId invalid => return provider and 1st location of active Providr Profile & status = LocationNotFound;
 if providrId not exists => providerId & status = ProvidrNotFound;
 if providerId exist but activeProfileId invalid => return providerId & status = InvalidProfile;
+
+limitations:
+Method shouldn't be used for getting more then 100 pairs per time, in most cases will be used to retrive 10-20 pairs

@@ -10,30 +10,74 @@ namespace test_project_01.Repositories
     {
         public ProfileRepository() { }
 
-        public Task<IEnumerable<Provider>> FindAsync(int[] ids) {
+        public Task<IEnumerable<Profile>> FindAsync(int[] ids) {
             return Task.FromResult(_items.Where(x => ids.Contains(x.Id)));
         }
 
-        static readonly Provider[] _items = new [] {
-            new Provider {
+        static readonly Profile[] _items = new Profile[] {
+            new Profile {
                Id = 1,
-               ActiveProfileId = 1,
-               Status = ProvideStatus.Active
+               Name = "demo #1",
+               ProviderId = 1,
+               ProviderType = ProviderType.Individual,
+               Locations = new Location[] {
+                   new Location {
+                       code = "l-1",
+                       Title = "title for #1"
+                   }
+               }
             },
-            new Provider {
+            new Profile {
                Id = 2,
-               ActiveProfileId = 2,
-               Status = ProvideStatus.Active
+               Name = "demo #2",
+               ProviderId = 2,
+               ProviderType = ProviderType.Individual,
+               Locations = new Location[] {
+                   new Location {
+                       code = "l-2",
+                       Title = "title for #2"
+                   }
+               }
             },
-            new Provider {
+            new Profile {
                Id = 3,
-               ActiveProfileId = 5,
-               Status = ProvideStatus.Active
+               Name = "demo #3",
+               ProviderId = 3,
+               ProviderType = ProviderType.Individual,
+               Locations = new Location[] {
+                   new Location {
+                       code = "l-3",
+                       Title = "title for #3"
+                   }
+               }
             },
-            new Provider {
-               Id = 4,
-               ActiveProfileId = 7,
-               Status = ProvideStatus.Active
+            new Profile {
+               Id = 5,
+               Name = "demo #5",
+               ProviderId = 3,
+               ProviderType = ProviderType.Individual,
+               Locations = new Location[] {
+                   new Location {
+                       code = "l-3-b",
+                       Title = "title for #3-b"
+                   },
+                   new Location {
+                       code = "l-3-c",
+                       Title = "title for #3-c"
+                   }
+               }
+            },
+            new Profile {
+               Id = 7,
+               Name = "demo #7",
+               ProviderId = 5,
+               ProviderType = ProviderType.Individual,
+               Locations = new Location[] {
+                   new Location {
+                       code = "l-5-b",
+                       Title = "title for #5-b"
+                   }
+               }
             }
         };
     }
